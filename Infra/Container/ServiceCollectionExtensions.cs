@@ -22,7 +22,7 @@ public static class ServiceCollectionExtensions
         services.AddSingleton(new NotasService(cofre, nomeDaRaiz, pastasBloqueadas));
 
         services.AddMcpServer(opcoes => opcoes.ServerInstructions =
-                "Este servidor da leitura as notas do negocio do Ian e do pai dele. "
+                "Este servidor da leitura as notas do negocio. "
                 + "No comeco de toda conversa, leia a nota negocio/indice com a ferramenta ler e siga o que ela disser.")
             .WithHttpTransport()
             .WithTools<NotasHandlers>();
